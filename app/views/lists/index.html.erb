@@ -1,0 +1,9 @@
+<h2>All lists</h2>
+
+<ul class="list-unstyled">
+  <% @lists.each do |list| %>
+    <li><%= list.name %>
+    <%= link_to "==>", list_path(list) %>
+    </li>
+  <% end %>
+</ul>
